@@ -1,0 +1,459 @@
+[
+    {
+        "key": "SYSTEM_SETTING",
+        "name": "System Setting",
+        "description": "Application Level System Setting",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "BASE_PATH",
+                "name": "Base Path",
+                "description": "Base Path For System Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    { 
+                        "key": "PUBLIC_CONTENT_BUCKET_NAME",
+                        "value": "content-local.cf.com",
+                        "description": "S3 path where the images, fiels will be uploaded and is available for public access",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "PRIVATE_CONTENT_BUCKET_NAME",
+                        "value": "content-private-local.cf.com",
+                        "description": "S3 path where the images, fiels will be uploaded and is not available publically",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "PUBLIC_CONTENT_BASE_PATH",
+                        "value": "https://s3.ap-south-1.amazonaws.com/content-local.cf.com",
+                        "description": "S3 public url to fetch public content",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "API_BASE_PATH",
+                        "value": "https://local.cf.com",
+                        "description": "Application Api base path using which the endpoints can be access",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    }
+                ]
+            },
+            {
+                "key": "SECURITY",
+                "name": "Security",
+                "description": "Security Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "PRIVILEGE_ACCESS",
+                        "value": true,
+                        "description": "Is privileged access to the endpoints enabled?",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "ACCESS_TOKEN",
+                        "value": "cf@123",
+                        "description": "Access token which is used to access sessionless but secure endpoints",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    }
+                ]
+            },
+            {
+                "key": "PAYMENT",
+                "name": "Payment",
+                "description": "Payment Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "PG_PROVIDER",
+                        "value": "<key>",
+                        "description": "Payment Gateway Provider?",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "PG_PROVIDER_KEY",
+                        "value": "<key>",
+                        "description": "Payment Gateway Provider Key",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "PG_PROVIDER_SECRET",
+                        "value": "<secret>",
+                        "description": "Payment Gateway Provider Secret",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "GENERAL_SETTING",
+        "name": "General",
+        "description": "Generic System Settings Related to file, ",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "FILE",
+                "name": "File",
+                "description": "File Configuration Attributes",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "FILE_UPLOAD_LIMIT_MB",
+                        "value": 1,
+                        "description": "Allowed File Upload Limit",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "DEFAULT_IMAGE_VALIDATION",
+                        "value": {
+                            "width": 110,
+                            "height": 110,
+                            "aspectRatio": 1,
+                            "sizeInKb": 50,
+                            "extensions": [
+                                "jpg",
+                                "jpeg"
+                            ]
+                        },
+                        "description": "Image validation",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            },
+            {
+                "key": "DEFAULT_IMAGE",
+                "name": "Default Images",
+                "description": "Application Default Images",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "PROFILE_IMAGE_URL",
+                        "value": "/images/default/profile.png",
+                        "description": "Default Profile image path",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "APPLICATION_SETTING",
+        "name": "Application",
+        "description": "Application Settings Related to session",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "CONSUMER",
+                "name": "Consumer",
+                "description": "Consumer Configuration Attributes",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "CONSUMER_DEEP_LINK_BASE_PATH",
+                        "value": "https://app.cf.work",
+                        "description": "Consumer Deeplink based path",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "CONSUMER_DEEP_LINK_API_URL",
+                        "value": "<Firebase API Url>",
+                        "description": "Consumer Firebase Deeplink Api URL",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "CONSUMER_MULTI_LOGIN",
+                        "value": true,
+                        "description": "Consumer Multi Login",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "CUSTOMER_APP_MIN_VERSION",
+                        "value": "1.0.7",
+                        "description": "Consumer Application Min Version",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "CUSTOMER_APP_LATEST_VERSION",
+                        "value": "1.0.7",
+                        "description": "Consumer Application Latest Version",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "ADMIN_SETTING",
+        "name": "Admin",
+        "description": "Admin Settings Related to login",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "GOOGLE_LOGIN",
+                "name": "Google Login",
+                "description": "Google Login Configuration",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "GOOGLE_LOGIN_CLIENT_ID",
+                        "value": "<google token>",
+                        "description": "Token to be used for login via google",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "GOOGLE_LOGIN_CLIENT_SECRET",
+                        "value": "<google secret>",
+                        "description": "Secret to be used for login via google",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "GOOGLE_LOGIN_CALLBACK_URL",
+                        "value": "<google callback url>",
+                        "description": "Callback Url to be used for login via google",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "CUSTOMER_SETTING",
+        "name": "Customer",
+        "description": "Customer Settings Related to push",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "PUSH",
+                "name": "Push Notification",
+                "description": "Push Notification Configuration",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "CUSTOMER_APP_PUSH_NOTIFICATION_SERVER_KEY",
+                        "value": "<server token>",
+                        "description": "Push Notification server key",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "CUSTOMER_APP_FCM_URL",
+                        "value": "https://fcm.googleapis.com/fcm/send",
+                        "description": "FCM Notification Url",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "CUSTOMER_FCM_WEB_API_KEY",
+                        "value": "<key>",
+                        "description": "FCM Web Api Key",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    }
+                ]
+            },
+            {
+                "key": "LOGIN",
+                "name": "Login",
+                "description": "Consumer Login Attributes",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "CONSUMER_SESSION_TIMEOUT_DAYS",
+                        "value": 365,
+                        "description": "Number of days in which consumer session will timeout",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "COMMUNICATION",
+        "name": "Communication",
+        "description": "Application Communication",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "SMS",
+                "name": "SMS",
+                "description": "SMS",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "SMS_PROVIDER",
+                        "value": "MSG91",
+                        "description": "SMS provider to be used in the application",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "SMS_PROVIDER_URL",
+                        "value": "https://api.msg91.com/api/v2/sendsms",
+                        "description": "SMS provider URL",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "SMS_PROVIDER_TOKEN",
+                        "value": "<token>",
+                        "description": "SMS provider token to be used in the application",
+                        "isEditable": true,
+                        "type": "PROPERTY"
+                    },
+                    {
+                        "key": "IS_DEFAULT_OTP_ENABLED",
+                        "value": true,
+                        "description": "Default OTP to bypass otp via sms, this can be used only if DEFAULT_OTP feature is enabled",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "DEFAULT_OTP",
+                        "value": "cf@123",
+                        "description": "Default OTP to bypass otp via sms, this can be used only if DEFAULT_OTP feature is enabled",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "OTP_EXPIRY_IN_MINUTE",
+                        "value": 3,
+                        "description": "Minutes in which the otp should expire",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "OTP_RETRY_LIMIT",
+                        "value": 3,
+                        "description": "Number of times otp can be retried",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "IS_SMS_ROUTING_ENABLED",
+                        "value": true,
+                        "description": "For non prod environment, the actual sms should not go to actual user, so this should be enabled",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "SMS_ROUTING_ON",
+                        "value": "9282929292,8838838322",
+                        "description": "If Routing is enabled, then the sms will be sent on below mobile number",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            },
+            {
+                "key": "PUSH",
+                "name": "Push",
+                "description": "Push",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "IS_PUSH_ROUTING_ENABLED",
+                        "value": true,
+                        "description": "For non prod environment, the actual push should not go to actual user, so this should be enabled",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "PUSH_ROUTING_ON",
+                        "value": "<push token>",
+                        "description": "If Routing is enabled, then the push will be sent on below device",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            },
+            {
+                "key": "EMAIL",
+                "name": "Email",
+                "description": "Email",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "IS_EMAIL_ROUTING_ENABLED",
+                        "value": true,
+                        "description": "For non prod environment, the actual email should not go to actual user, so this should be enabled",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "EMAIL_ROUTING_ON",
+                        "value": "test@cf.com",
+                        "description": "If Routing is enabled, then the email will be sent on below email",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            },
+            {
+                "key": "CHAT",
+                "name": "Chat",
+                "description": "Chat",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "key": "IS_CHAT_ENABLED",
+                        "value": true,
+                        "description": "To enable disable chat application",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "SUPPORT_SETTING",
+        "name": "Support",
+        "description": "Customer Support Configuration Settings Related to the application",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "COMMUNICATION",
+                "name": "Communication",
+                "description": "Different type of communication supported via admin",
+                "image": "",
+                "properties": [
+                    {
+                        "key": "SUPPORT_EMAIL_ID",
+                        "value": "support@cf.com",
+                        "description": "Support email on which the email will be received from the customers",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    },
+                    {
+                        "key": "SUPPORT_CALL",
+                        "value": "1800 2828 0001",
+                        "description": "Phone number on which the the customers can communicate",
+                        "isEditable": true,
+                        "type": "PARAM"
+                    }
+                ]
+            }
+        ]
+    }
+]

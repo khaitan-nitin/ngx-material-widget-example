@@ -1,0 +1,32 @@
+<mx-static-list
+    *ngIf="record"
+    [listConfig]="listDiabledRow"
+    [parent]="parent"
+    [listReset]="listReset"
+    [keyMap]="keyMap"
+    [record]="record"
+    (onFormChange)="formChange($event)"
+    (onFieldChange)="fieldChange($event)"
+    (onButtonClick)="buttonClick($event)"
+    (onPageChange)="onPage($event)"
+    (onSortChange)="onSort($event)"  
+></mx-static-list>
+
+<mat-card>
+    <mat-card-content>
+         <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                   <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                        <div class="mx-example-header">RESPONSE</div>
+                   </div>
+              </div>
+              <div class="mdc-layout-grid__inner">
+                   <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                        <div class="mx-example-button">
+                             <pre class="response-pre">{{response | json}}</pre>
+                        </div>
+                   </div>
+              </div>
+         </div>
+    </mat-card-content>
+</mat-card>

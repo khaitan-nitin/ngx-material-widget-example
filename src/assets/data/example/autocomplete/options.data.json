@@ -1,0 +1,27 @@
+[
+    {
+        "key": "india",
+        "value": "India",
+        "description": "Check to activate the account"
+    },
+    {
+        "key": "australia",
+        "value": "Australia",
+        "description": "Check to activate the account"
+    },
+    {
+        "key": "new",
+        "value": "New Zealand",
+        "description": "Check to activate the account"
+    },
+    {
+        "key": "canada",
+        "value": "Canada",
+        "description": "Check to activate the account"
+    },
+    {
+        "key": "austria",
+        "value": "Austria",
+        "description": "Check to activate the account"
+    }
+]

@@ -1,0 +1,59 @@
+<mat-card>
+    <div class="mdc-layout-grid header-example">
+         <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-8-phone mdc-layout-grid__cell--align-middle mdc-layout-grid--align-left">
+                   <mat-card-header>
+                        <mat-card-title>4 Button Colors</mat-card-title>
+                   </mat-card-header>
+              </div>
+              <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--align-middle mdc-layout-grid--align-right">
+                   <mx-button-group 
+                        [buttons]="goToCodeButton" 
+                        [formDisplayMode]="'EDIT'"
+                        (onClick)="goToCodeCallback($event)">
+                   </mx-button-group>
+              </div>
+         </div>
+    </div>
+     <mat-card-content>
+          <div class="mdc-layout-grid">
+               <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                         <div class="mx-example-header">Button (different colors)</div>
+                    </div>
+               </div>
+               <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-2 mdc-layout-grid__cell--align-middle">
+                         <div class="mx-example-label">Button Colors</div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-10 mdc-layout-grid__cell--align-middle">
+                         <div class="mx-example-button">
+                              <mx-button-group 
+                                   [buttons]="buttonColors" 
+                                   [form]="form" 
+                                   [formDisplayMode]="'EDIT'"
+                                   [sourceIdentifier]="sourceIdentifier"
+                                   [sourceIndex]="2" 
+                                   [widgetArrayIndex]="widgetArrayIndex"
+                                   [context]="context" 
+                                   [originalData]="originalData" 
+                                   (onClick)="click($event)">
+                              </mx-button-group>
+                         </div>
+                    </div>
+               </div>
+               <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                         <div class="mx-example-header">RESPONSE</div>
+                    </div>
+               </div>
+               <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                         <div class="mx-example-button">
+                              <pre class="response-pre">{{response | json}}</pre>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </mat-card-content>
+</mat-card>

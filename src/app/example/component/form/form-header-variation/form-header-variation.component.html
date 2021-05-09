@@ -1,0 +1,27 @@
+<mx-form
+     [formConfig]="formHeaderVariation"
+     [sourceIndex]="sourceIndex"
+     [record]="record"
+     [reset]="reset"
+     (onFieldChange)="fieldChange($event)"
+     (onFormChange)="formChange($event)"
+     (onButtonClick)="buttonClick($event)"
+></mx-form>
+<mat-card>
+     <mat-card-content>
+          <div class="mdc-layout-grid">
+               <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                         <div class="mx-example-header">RESPONSE</div>
+                    </div>
+               </div>
+               <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                         <div class="mx-example-button">
+                              <pre class="response-pre">{{response | json}}</pre>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </mat-card-content>
+</mat-card>

@@ -1,0 +1,713 @@
+[
+    {
+        "key": "SYSTEM_SETTING",
+        "name": "System Setting",
+        "description": "Application Level System Setting",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "BASE_PATH",
+                "name": "Base Path",
+                "description": "Base Path For System Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "type": "APPLICATION",
+                        "label": "Application",
+                        "description": "Different types of application available in the application",
+                        "items": [
+                            {
+                                "key": "ALL",
+                                "label": "All",
+                                "active": true
+                            },
+                            {
+                                "key": "ADMIN",
+                                "label": "Admin",
+                                "active": true
+                            },
+                            {
+                                "key": "CONSUMER",
+                                "label": "Consumer",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "ACCESS_TYPE",
+                        "label": "Access Type",
+                        "description": "Access specifier associated with an attribute",
+                        "items": [
+                            {
+                                "key": "PUBLIC",
+                                "label": "Public",
+                                "active": true
+                            },
+                            {
+                                "key": "WITH_LOGIN",
+                                "label": "With Login",
+                                "active": true
+                            },
+                            {
+                                "key": "SYSTEM",
+                                "label": "System Internal Use",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "PROPERTY_TYPE",
+                        "label": "Property",
+                        "description": "Type of Property",
+                        "items": [
+                            {
+                                "key": "PROPERTY",
+                                "label": "Property",
+                                "active": true
+                            },
+                            {
+                                "key": "PARAM",
+                                "label": "Param",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    }
+                ]
+            },
+            {
+                "key": "PAYMENT",
+                "name": "Payment",
+                "description": "Payment Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "type": "PAYMENT_STATUS",
+                        "label": "Payment Status",
+                        "description": "Transaction Status as it moves ahead in the workflow",
+                        "items": [
+                            {
+                                "key": "PENDING",
+                                "label": "Pending",
+                                "active": true
+                            },
+                            {
+                                "key": "CANCEL",
+                                "label": "Cancel",
+                                "active": true
+                            },
+                            {
+                                "key": "PAID",
+                                "label": "Paid",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "TRANSACTION_TYPE",
+                        "label": "Transaction Type",
+                        "items": [
+                            {
+                                "key": "DEBIT",
+                                "label": "Debit",
+                                "active": true
+                            },
+                            {
+                                "key": "CREDIT",
+                                "label": "Credit",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    }
+                ]
+            },
+            {
+                "key": "COMMUNICATION",
+                "name": "Communication",
+                "description": "Communication Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "type": "COMMUNICATION_MEDIA",
+                        "label": "Communication Media",
+                        "description": "Differnt media types supported for communication",
+                        "items": [
+                            {
+                                "key": "EMAIL",
+                                "label": "Email",
+                                "active": true
+                            },
+                            {
+                                "key": "SMS",
+                                "label": "Sms",
+                                "active": true
+                            },
+                            {
+                                "key": "PUSH",
+                                "label": "PUSH",
+                                "active": true
+                            },
+                            {
+                                "key": "IN_APP",
+                                "label": "In-App",
+                                "active": true
+                            },
+                            {
+                                "key": "WHATSAPP",
+                                "label": "WhatsApp",
+                                "active": true
+                            },
+                            {
+                                "key": "CHAT",
+                                "label": "Chat",
+                                "active": true
+                            },
+                            {
+                                "key": "FACEBOOK",
+                                "label": "Facebook",
+                                "active": true
+                            },
+                            {
+                                "key": "TWITTER",
+                                "label": "Twitter",
+                                "active": true
+                            },
+                            {
+                                "key": "LINKEDIN",
+                                "label": "Linkedin",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "COMMUNICATION_TYPE",
+                        "label": "Communication Type",
+                        "description": "Differnt types supported for communication",
+                        "items": [
+                            {
+                                "key": "PROMOTIONAL",
+                                "label": "Promotional",
+                                "active": true
+                            },
+                            {
+                                "key": "TRANSACTIONAL",
+                                "label": "Transactional",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "CAMPAIGN_RECEIVER_TYPE",
+                        "label": "Campaign Receiver Type",
+                        "description": "Differnt types receivers criteria for Communication Campaign",
+                        "items": [
+                            {
+                                "key": "QUERY_BASED",
+                                "label": "Query Based",
+                                "active": true
+                            },
+                            {
+                                "key": "SEGMENT_BASED",
+                                "label": "Segment Based",
+                                "active": true
+                            },
+                            {
+                                "key": "CONTACT",
+                                "label": "Contact List",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "CAMPAIGN_SEND_TYPE",
+                        "label": "Campaign Send Type",
+                        "description": "Differnt logic to send/invoke Communication Campaign",
+                        "items": [
+                            {
+                                "key": "INSTANT",
+                                "label": "Instant",
+                                "active": true
+                            },
+                            {
+                                "key": "CRON",
+                                "label": "Cron",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "CAMPAIGN_SEND_PATTERN",
+                        "label": "Campaign Send Pattern",
+                        "description": "Pattern to send messages",
+                        "items": [
+                            {
+                                "key": "ONE_GO",
+                                "label": "One Go",
+                                "active": true
+                            },
+                            {
+                                "key": "BATCH",
+                                "label": "Batch",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    }
+                ]
+            },
+            {
+                "key": "MARKETING",
+                "name": "Marketing",
+                "description": "Marketing Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "type": "PC_USAGE_STATUS",
+                        "label": "Usage Status",
+                        "description": "Promotion Code Usage Status",
+                        "items": [
+                            {
+                                "key": "APPLIED",
+                                "label": "Applied",
+                                "active": true
+                            },
+                            {
+                                "key": "REJECTED",
+                                "label": "Rejected",
+                                "active": true
+                            },
+                            {
+                                "key": "CANCELLED",
+                                "label": "Cancelled",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "PC_BENEFIT_TYPE",
+                        "label": "Benefit Type",
+                        "description": "Promotion Code Benefit Type",
+                        "items": [
+                            {
+                                "key": "AMOUNT",
+                                "label": "Amount",
+                                "active": true
+                            },
+                            {
+                                "key": "PERCENTAGE",
+                                "label": "Percentage",
+                                "active": true
+                            },
+                            {
+                                "key": "PRODUCT",
+                                "label": "Product",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "PC_RECURRING_FREQUENCY",
+                        "label": "Recurring Frequency",
+                        "description": "Promotion Code Recurring Frequency",
+                        "items": [
+                            {
+                                "key": "WEEKLY",
+                                "label": "Weekly",
+                                "active": true
+                            },
+                            {
+                                "key": "BIWEEKLY",
+                                "label": "Biweekly",
+                                "active": true
+                            },
+                            {
+                                "key": "MONTHLY",
+                                "label": "Monthly",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "PC_RECURRING_For",
+                        "label": "Recurring For",
+                        "description": "Promotion Code Recurring For",
+                        "items": [
+                            {
+                                "key": "FIRST_FEW",
+                                "label": "First Few",
+                                "active": true
+                            },
+                            {
+                                "key": "LAST_FEW",
+                                "label": "Last Few",
+                                "active": true
+                            },
+                            {
+                                "key": "SPECIFIC",
+                                "label": "Specific",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "COLLECTION_DISPLAY_TYPE",
+                        "label": "Collection Display Type",
+                        "description": "Collection Display Type",
+                        "items": [
+                            {
+                                "key": "GRID",
+                                "label": "Grid",
+                                "active": true
+                            },
+                            {
+                                "key": "CAROUSAL",
+                                "label": "Carousal",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    }
+                ]
+            },
+            {
+                "key": "RULE",
+                "name": "Rule Engine",
+                "description": "Rule Engine Setting",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "type": "RULE_OPERATOR",
+                        "label": "Operator",
+                        "description": "Differnt operators as will be used by the Rule Engine",
+                        "items": [
+                            {
+                                "key": "EQUAL",
+                                "label": "Equal",
+                                "active": true
+                            },
+                            {
+                                "key": "LIKE",
+                                "label": "Like",
+                                "active": true
+                            },
+                            {
+                                "key": "GTE",
+                                "label": "Greater Than Equals",
+                                "active": true
+                            },
+                            {
+                                "key": "GT",
+                                "label": "Greater Than",
+                                "active": true
+                            },
+                            {
+                                "key": "LTE",
+                                "label": "Less Than Equals",
+                                "active": true
+                            },
+                            {
+                                "key": "LT",
+                                "label": "Less Than",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "RULE_CONDTION_JOIN",
+                        "label": "Conditional Join",
+                        "description": "Differnt type of joins as will be used by the Rule Engine",
+                        "items": [
+                            {
+                                "key": "AND",
+                                "label": "And",
+                                "active": true
+                            },
+                            {
+                                "key": "OR",
+                                "label": "Or",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "CONTACT_CRITERIA_TYPE",
+                        "label": "Contact Criteria Type",
+                        "description": "Contact Criteria Type to be used by Access Criteria",
+                        "items": [
+                            {
+                                "key": "QUERY_BASED",
+                                "label": "Query Based",
+                                "active": true
+                            },
+                            {
+                                "key": "SEGMENT_BASED",
+                                "label": "Segment Based",
+                                "active": true
+                            },
+                            {
+                                "key": "CONTACT",
+                                "label": "Contact",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "GENERAL_SETTING",
+        "name": "General",
+        "description": "Generic System Settings Related to file, ",
+        "image": "assets/images/master-data/setting.jpg",
+        "subCategories": [
+            {
+                "key": "COMMON",
+                "name": "Common",
+                "description": "Common Settings",
+                "image": "assets/images/master-data/setting.jpg",
+                "properties": [
+                    {
+                        "type": "LANGUAGE",
+                        "label": "Language",
+                        "description": "Different types of languague supported by the application",
+                        "items": [
+                            {
+                                "key": "en",
+                                "label": "English",
+                                "active": true
+                            },
+                            {
+                                "key": "hindi",
+                                "label": "Hindi",
+                                "active": true,
+                                "applications": [
+                                    "CONSUMER"
+                                ]
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "COUNTRY",
+                        "label": "Country",
+                        "description": "Countries supported by the application",
+                        "items": [
+                            {
+                                "key": "INDIA",
+                                "label": "India",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": true,
+                        "active": true
+                    },
+                    {
+                        "type": "STATE",
+                        "label": "State",
+                        "description": "States supported by the application",
+                        "items": [
+                            {
+                                "key": "HARYANA",
+                                "label": "Haryana",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": true,
+                        "active": true
+                    },
+                    {
+                        "type": "CITY",
+                        "label": "City",
+                        "description": "Cities supported by the application",
+                        "items": [
+                            {
+                                "key": "GURGAON",
+                                "label": "Gurgaon",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": true,
+                        "active": true
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "label": "Boolean",
+                        "items": [
+                            {
+                                "key": true,
+                                "label": "Yes",
+                                "active": true
+                            },
+                            {
+                                "key": false,
+                                "label": "No",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "GENDER",
+                        "label": "Gender",
+                        "items": [
+                            {
+                                "key": "m",
+                                "label": "Male",
+                                "active": true
+                            },
+                            {
+                                "key": "f",
+                                "label": "Female",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "ACTIVE_STATUS",
+                        "label": "Active Status",
+                        "items": [
+                            {
+                                "key": true,
+                                "label": "Active",
+                                "active": true
+                            },
+                            {
+                                "key": false,
+                                "label": "In Active",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "APPLICATION_SETTING",
+        "name": "Application",
+        "description": "Application Settings Related to session",
+        "image": "assets/images/master-data/setting.jpg",
+        "active": true,
+        "subCategories": [
+            {
+                "key": "CONSUMER",
+                "name": "Consumer",
+                "description": "Consumer Configuration Attributes",
+                "image": "assets/images/master-data/setting.jpg",
+                "active": true,
+                "properties": [
+                    {
+                        "type": "ADDRESS_TYPE",
+                        "label": "Type of Address",
+                        "description": "Categorization of address",
+                        "items": [
+                            {
+                                "key": "HOME",
+                                "label": "Home",
+                                "active": true
+                            },
+                            {
+                                "key": "WORK",
+                                "label": "Work",
+                                "active": true
+                            },
+                            {
+                                "key": "OTHER",
+                                "label": "Other",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    },
+                    {
+                        "type": "DEVICE_TYPE",
+                        "label": "Type of Device",
+                        "description": "Categorization of device",
+                        "items": [
+                            {
+                                "key": "ANDROID",
+                                "label": "Android",
+                                "active": true
+                            },
+                            {
+                                "key": "IOs",
+                                "label": "IOs",
+                                "active": true
+                            }
+                        ],
+                        "access": "PUBLIC",
+                        "isEditable": false,
+                        "active": true
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "type": "LANGUAGE",
+    "label": "Language",
+    "description": "Different types of languague supported by the application",
+    "categoryKey" : "GENERAL_SETTING",
+    "subCategoryKey" : "COMMON",
+    "items": [
+        {
+            "key": "en",
+            "label": "English",
+            "active": true
+        },
+        {
+            "key": "hindi",
+            "label": "Hindi",
+            "active": true,
+            "applications": [
+                "CONSUMER"
+            ]
+        }
+    ],
+    "applications": [],
+    "access": "PUBLIC",
+    "isEditable": true,
+    "active": true
+}

@@ -1,0 +1,37 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.width-30 {
+  width: 30% !important;
+}
+
+.mat-drawer-inner-container {
+  scrollbar-width: thin;
+  scrollbar-color: #a0a0a033 whitesmoke;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: whitesmoke;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #a0a0a033;
+    border-radius: 6px;
+    border: 3px solid whitesmoke;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a0a0a033;
+  border-radius: 6px;
+  border: 3px solid whitesmoke;
+}
+
+.mat-drawer-inner-container {
+  overflow: hidden !important;
+}

@@ -1,0 +1,58 @@
+<mx-crud-list  
+    *ngIf="configListData && configListData.records"
+    [identifier]="identifier" 
+    [header]="header" 
+    [actions]="actions" 
+    [actionPages]="actionPages"
+
+    [listReset]="listReset"
+    [quickLinks]="quickLinks" 
+    [searchConfig]="searchConfig" 
+    [listConfig]="listConfig" 
+    [keyMap] = "keyMap"
+    [configData]="configListData"  
+
+    (onButtonClick)="buttonClick($event)"
+    (onFieldChange)="fieldChange($event)"
+    (onFormClick)="formChange($event)"
+    (onSortClick)="onSort($event)"
+    (onPageClick)="onPage($event)"
+></mx-crud-list>
+
+<mx-crud-form
+    *ngIf="configFormData && configFormData.record"
+    [identifier]="identifier" 
+    [header]="header" 
+    [actions]="actions" 
+    [actionPages]="actionPages"
+    [displayMode]="displayMode"
+    [onAction]="action"
+
+    [reset]="reset"  
+    [form]="form"  
+    [keyMap] = "keyMap" 
+    [configData]="configFormData"  
+
+    (onButtonClick)="buttonClick($event)"
+    (onFieldChange)="fieldChange($event)"
+    (onFormClick)="formChange($event)"    
+></mx-crud-form>
+
+<mat-card>
+    <mat-card-content>
+         <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                   <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                        <div class="mx-example-header">RESPONSE ({{responseType}})</div>
+                   </div>
+              </div>
+              <div class="mdc-layout-grid__inner">
+                   <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-middle">
+                        <div class="mx-example-button">
+                             <pre class="response-pre">{{response | json}}</pre>
+                        </div>
+                   </div>
+              </div>
+         </div>
+    </mat-card-content>
+</mat-card>

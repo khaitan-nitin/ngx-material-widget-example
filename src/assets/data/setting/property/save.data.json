@@ -1,0 +1,20 @@
+{
+    "key": "PUBLIC_CONTENT_BUCKET_NAME",
+    "description": "Different types of languague supported by the application",
+    "categoryKey" : "GENERAL_SETTING",
+    "subCategoryKey" : "COMMON",
+    "value" : {
+        "default" : "content-default.cf.com",
+        "local" : "content-local.cf.com",
+        "test" : "content-test.cf.com", 
+        "dev" : "content-dev.cf.com",
+        "qa" :  "content-qa.cf.com",
+        "prod-fix" : "content-prodfix.cf.com",
+        "uat" : "content-uat.cf.com",
+        "prod" : "content.cf.com"
+    },
+    "applications": [],
+    "access": "PUBLIC",
+    "isEditable": true,
+    "active": true
+}
